@@ -320,8 +320,9 @@
             let dataObj={name,lastname,phoneNumber,address:`${address},${areacode}`,country,flatNo,roomType,checkIn,checkOut}
             console.log(dataObj)
             let url="http://localhost:2000/reservation"
+            let cloudURL = "https://young-springs-63929.herokuapp.com/reservation"
 
-            fetch(url,{ 
+            fetch(cloudURL,{ 
             method: 'POST', 
             headers: { 
                 'Content-type': 'application/json'

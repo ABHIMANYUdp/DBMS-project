@@ -328,8 +328,9 @@
         let dataObj={firstname,lastname,phoneNumber,numberOfCustomers,cuisines,time}
         console.log(dataObj)
         let url="http://localhost:2000/dining"
+        let cloudURL="https://young-springs-63929.herokuapp.com/dining"
 
-        fetch(url,{ 
+        fetch(cloudURL,{ 
         method: 'POST', 
         headers: { 
             'Content-type': 'application/json'
