@@ -70,7 +70,8 @@ app.post("/dining", (req, res) => {
     });
 });
 
+const port = process.env.PORT || 2000
 // Start the server
-app.listen(2000, () => {
+app.listen(port, () => {
     console.log('Server started on port 2000.....');
 });
